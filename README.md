@@ -1,5 +1,5 @@
-# PCL2-CE-web
+# PCL2-CE-Web
 
-https://fishcpy.github.io/PCL2-CE-web/
+本网站修改自 https://github.com/fishcpy/PCL2-CE-web
 
-https://pcl2ce.us.kg/
+地址：https://pcl2ce.pclcommunity.us.kg
