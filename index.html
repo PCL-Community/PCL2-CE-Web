@@ -5,8 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCL2 社区版 | 开源免费的 Minecraft 启动器</title>
+    <script src="trigger.js" defer></script>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
+	<style>/*
+  Handing Co. 2025
+  Writting for Borisy
+
+  All rights reserved by Handing
+*/
+:root {
+  font-size: 20px;
+  --blur: 10;
+  --opacity: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#xfce-logo {
+  background: url("https://149366088.v2.pressablecdn.com/wp-content/uploads/2019/08/xfce-logo-750x429.jpg");
+  height: 400px;
+  width: 800px;
+  position: absolute;
+  top: 5000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.logo{
+  height: 50px;
+  width:100%;
+  text-align: center;
+}
+
+.linowers {
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.utd {
+  background: linear-gradient(to bottom, #0ec3f0, #1ae824, #ffe44a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.ltr {
+  background: linear-gradient(to right, #5d0ef0, #02f7f7, #c8ff00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.title-text {
+  font-size: 70px;
+  min-height: 100vh;
+}
+
+#strong {
+  font-family: Helvetica, sans-serif;
+  height: 300vh;
+}
+
+.sticky {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  font-size: calc(var(--size) * 0.5em);
+}
+
+span {
+  opacity: var(--opacity);
+}
+
+#peculiarity {
+  float: left;
+  margin: 100vh 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  line-height: 1.22em;
+  width: 800px;
+}
+
+mes {
+  --opacity: 0.3;
+  opacity: var(--opacity);
+}
+
+.pro {
+  display: block;
+  margin-top: 2.2rem;
+}
+
+
+
+@keyframes move {
+  0% {
+      border-radius: 50px;
+      background-color: #f7ebab;
+      transform: translate(0px, 500px);
+  }
+  40% {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      background-color: #f5f794;
+      transform: translate(400px, 500px);
+  }
+  45% {
+      width: 100px;
+      height: 100px;
+      background-color: #f4f779;
+      transform: translate(450px, 500px);
+  }
+  50% {
+      width: 100px;
+      height: 100px;
+      background-color: #f7e165;
+      transform: translate(500px, 500px);
+  }
+  55% {
+      width: 100px;
+      height: 100px;
+      background-color: #f7dd49;
+      transform: translate(550px, 500px);
+  }
+  60% {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      background-color: #f7d82e;
+      transform: translate(600px, 500px);
+  }
+  100% {
+      border-radius: 50px;
+      background-color: #ffd700;
+      transform: translate(900px, 500px);
+  }
+}
+
+
 </head>
 
 <link rel="icon" href="./img/logo.ico">
@@ -44,7 +201,14 @@
             <h1 class="pcl">PCL2 社区版</h1>
         </section>
     </header>
-
+	<div id="peculiarity" tg-name="opacity" tg-ref="peculiarity" tg-from="1" tg-to="10" tg-step="1" style="align-items: center;">
+        <mes tg-name="opacity" tg-filter="2!" tg-map="2: 1" tg-follow="peculiarity">PCL2-CE ,基于 PCL2 开源代码二次开发的社区版本。</mes>
+        <mes tg-name="opacity" tg-filter="3!" tg-map="3: 1" tg-follow="peculiarity">与PCL2主线一样基于WPF，包括了主线暂未制作的功能和改进！</mes>
+        <mes tg-name="opacity" tg-filter="4!" tg-map="4: 1" tg-follow="peculiarity">PCL2 社区版 由社区强力驱动的抢先预览版。 </mes>
+        <mes tg-name="opacity" tg-filter="5!" tg-map="5: 1" tg-follow="peculiarity">有深色，浅色模式，加入了资源包、光影下载等。 </mes>
+        <mes tg-name="opacity" tg-filter="6!" tg-map="6: 1" tg-follow="peculiarity">而且支持Windows in ARM系统！</mes>
+        <mes tg-name="opacity" tg-filter="6,7" tg-map="6: 0.3;7: 1" tg-follow="peculiarity" class="pro">That is really Pro</mes>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="video-container">
         <iframe
             src="//player.bilibili.com/player.html?isOutside=true&aid=113865304048458&bvid=BV1w5wheQEAy&cid=28195815657&p=1"
@@ -87,7 +251,8 @@
         <div class="footer-content">
             <p>
                 本网站修改自 <a href="https://github.com/fishcpy/PCL2-CE-web">此仓库</a><br>
-                特别鸣谢：<a href="https://github.com/fishcpy">@fishcpy</a>
+                特别鸣谢：<a href="https://github.com/fishcpy">@fishcpy</a><br>
+                <a href="https://github.com/softosdev">@SoftOSDev</a>
             </p>
         </div>
     </footer>
